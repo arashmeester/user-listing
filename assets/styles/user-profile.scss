@@ -1,0 +1,37 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.user-header {
+  background-color: #36bad8;
+
+  .image {
+    width: 200px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: -7rem;
+    }
+  }
+
+  .send-msg-button {
+    background-color: white;
+    color: #36bad8;
+
+    &:hover {
+      background-color: #36bad8;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+
+  .add-friend-button {
+    background-color: #36bad8;
+    color: white;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: white;
+      color: #36bad8;
+    }
+  }
+}

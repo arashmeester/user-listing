@@ -1,0 +1,7 @@
+// Fonts
+$font-size-base: map-get((
+  base: 0.8125rem,
+  sm: 0.75rem,
+  md: 0.875rem,
+  lg: 1rem,
+), base);

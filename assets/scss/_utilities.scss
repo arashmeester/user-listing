@@ -1,0 +1,23 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@for $i from 1 through 100 {
+  $value: $i * 10;
+
+  .min-w-px-#{$value} {
+    min-width: #{$value}px;
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @for $i from 0 through 20 {
+      .w#{$infix}-#{$i * 5} {
+        width: #{$i * 5%} !important;
+      }
+    }
+  }
+}
