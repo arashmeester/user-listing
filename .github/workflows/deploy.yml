@@ -15,10 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install and build
+      - name: Install and generate
         run: |
           npm install
-          npm run build
+          npm run generate
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
