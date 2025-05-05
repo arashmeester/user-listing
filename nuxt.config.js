@@ -2,6 +2,10 @@
 export default {
   mode: 'universal',
   target: 'static',
+  ssr: false,
+  router: {
+    base: '/',
+  },
   /*
   ** Headers of the page
   */
